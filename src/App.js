@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -23,6 +25,7 @@ function App() {
     const result = await response.json();
     if (result.success) {
       setMessage('Login successful!');
+      navigate('/dashboard'); // Redirect to dashboard page on successful login
     } else {
       setMessage('Invalid credentials.');
     }
