@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Dashboard.css'; // For custom styling
+import '../Dashboard/Dashboard.css'; // For custom styling
 
 function Profile() {
   return (

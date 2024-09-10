@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App';
-import Dashboard from './Dashboard';
-import Profile from './Profile';
-import Settings from './Settings';
+import Dashboard from './components/Dashboard/Dashboard';
+import Profile from './components/Profile/Profile';
+import Settings from './components/Settings/Settings';
 import './index.css';
 
 ReactDOM.render(
