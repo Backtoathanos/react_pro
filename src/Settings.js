@@ -2,11 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Dashboard.css'; // For custom styling
 
-function Dashboard() {
+function Setting() {
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
-        <h1>Welcome to the Dashboard</h1>
+        <h1>Welcome to the Settings</h1>
         <nav>
           <ul>
             <li><a href="/dashboard">Dashboard</a></li>
@@ -19,18 +19,7 @@ function Dashboard() {
 
       <main className="dashboard-main">
         <section className="dashboard-stats">
-          <div className="stat-card">
-            <h3>Total Users</h3>
-            <p>1500</p>
-          </div>
-          <div className="stat-card">
-            <h3>Sales Today</h3>
-            <p>$2,000</p>
-          </div>
-          <div className="stat-card">
-            <h3>Pending Orders</h3>
-            <p>45</p>
-          </div>
+          I am Settings page.
         </section>
       </main>
       <footer className="dashboard-footer">
@@ -40,4 +29,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Setting;
